@@ -1,0 +1,11 @@
+.direnv/
+.envrc
+
+.cache/
+build/
+.clang-format
+
+.git/
+
+npins/
+
