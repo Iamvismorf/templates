@@ -1,7 +1,11 @@
-# Usage 
-create alias to ~/mytemplates:
+### Usage 
+```
+Create alias to ~/mytemplates:
     nix registry add biscuits ~/mytemplates
-show registries:
+
+Show registries:
     nix registry list
-init:
+
+Init:
     nix flake init -t biscuits#desiredTemplate
+```
