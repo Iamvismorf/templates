@@ -6,6 +6,7 @@ in
     packages = [
       pkgs.just
       pkgs.llvmPackages.clang-tools
+      pkgs.neocmakelsp
     ];
     # dependencies that should exist in the runtime environment
 
