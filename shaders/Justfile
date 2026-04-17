@@ -1,3 +1,16 @@
+set quiet
+
 init:
    npins init --bare; npins add github nixos nixpkgs -b nixos-unstable; direnv allow
 
+[no-cd]
+frag filename:
+   #!/usr/bin/env sh
+    filePath="$(pwd)/{{filename}}.frag"
+
+    if [ -f "$filePath" ]; then 
+      echo "file already exists"
+      exit 1
+    fi
+
+    cat {{justfile_directory()}}/src/template.frag >> `pwd`/{{filename}}.frag

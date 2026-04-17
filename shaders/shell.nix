@@ -11,6 +11,7 @@ in
     buildInputs = [
       pkgs.glslviewer
       pkgs.glsl_analyzer
+      pkgs.glslls
     ];
 
     # dependencies that should exist in the build environment
