@@ -10,6 +10,7 @@
         path = ./cpp;
         description = "simple console application";
       };
+
       shaders = {
         path = ./shaders;
         description = "shaders playground";

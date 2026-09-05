@@ -8,4 +8,6 @@ Show registries:
 
 Init:
     nix flake init -t biscuits#desiredTemplate
+    nix flake init -t url#desiredTemplate
+        example url: github:nixos/templates
 ```

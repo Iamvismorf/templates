@@ -27,10 +27,13 @@ vec2 rotate2D(vec2 uv, float degree) {
    return mat2(cos(rad), sin(rad), -sin(rad), cos(rad)) * uv;
 }
 
-float random(vec2 st) {
+float random2D(vec2 st) {
    return fract(sin(dot(st,
             vec2(12.9898, 78.233))) *
          43758.5453123);
+}
+float random2DSeeded(vec2 uv, vec2 seed) {
+   return random2D(uv + seed);
 }
 
 float valueNoise(vec2 uv) {
